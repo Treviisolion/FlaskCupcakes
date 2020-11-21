@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="static/cupcakes.js"></script>
+    <title>Cupcakes</title>
+</head>
+
+<body>
+    <h1>Cupcakes</h1>
+    <ul id="cupcakes"></ul>
+    <h3>New Cupcakes</h3>
+    <form method="POST" id="newCupcake">
+        <label for="flavor">Flavor:</label>
+        <input type="text" name="flavor" id="flavor" autocomplete="off" required><br>
+        <label for="Size">Size:</label>
+        <input type="text" name="size" id="size" autocomplete="off" required><br>
+        <label for="rating">Rating:</label>
+        <input type="number" name="rating" id="rating" min="0" max="10" required><br>
+        <label for="image">Image:</label>
+        <input type="url" name="image" id="image" autocomplete="off">
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
